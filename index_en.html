@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Support Sessions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #eef2f3;
+      color: #3b3b3b;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      padding: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .profile {
+      flex: 1;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #001f3d;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .about-box {
+      background-color: #dfe4ea95;
+      padding: 1%;
+      margin-top: 1%;
+      border-radius: 5%;
+      text-align: left;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .head-box {
+      background-color: #dfe4ea;
+      padding: 1%;
+      margin-top: 1%;
+      border-radius: 1%;
+      text-align: justify;
+      font-size: 1.2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .content {
+      flex: 2;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #55340c;
+    }
+
+    h2 {
+      margin-top: 1.5em;
+      font-size: 1.2rem;
+      color: #034467;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #034467;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .lang-buttons {
+      margin-top: 30px;
+    }
+
+    .lang-buttons button {
+      margin-right: 10px;
+      padding: 10px 16px;
+      background-color: #0281c69a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      .about-box {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <img src="./profile.JPEG" alt="Profile Photo">
+      <div class="about-box">
+        <h2>Про мене</h2>
+        <p>PhD in Psychology. Certified specialist by the European Confederation of Psychoanalytic Psychotherapies (ECPP). Working in the field since 2007.</p>
+      </div>
+    </div>
+
+    <div class="content">
+        <div class="head-box">
+            <h1>Individual Online Sessions</h1>
+            <p>I offer individual online conversations of 50 minutes. This is a safe space where you can receive support, explore thoughts and emotions, and gain perspective.</p>
+            <p><i><span style="font-size: 0.85em;">Please note that this is not psychology or therapy in a medical sense, and I am not licensed by the Swedish National Board of Health and Welfare.</span></i></p>
+        </div>
+
+      <h2>Business Information</h2>
+      <p><strong>Business Name:</strong> Kateryna Mazurenko<br>
+         <strong>Organization Number:</strong> 19860705-0484<br>
+         <strong>Address:</strong> Bergagatan 4, 341 50, Lagan, Sweden<br>
+         <strong>Email:</strong> <a href="mailto:ivan@example.com">kateryna.mazurenko@gmail.com</a><br>
+         <strong>Phone:</strong> +46 76 268 36 28</p>
+
+      <h2>Cancellation and Refund Policy</h2>
+      <p>You may cancel your session up to 24 hours in advance. No refunds are issued for late cancellations or missed appointments.</p>
+      <p>The service is for adults. Persons under 18 must attend together with a legal guardian.</p>
+
+      <h2>Privacy Policy (GDPR)</h2>
+      <p>We only collect the information you provide (name, email, optional phone) in order to contact you. Your data is stored only as long as needed and never shared with third parties without your consent.</p>
+
+      <div class="lang-buttons">
+        <button onclick="window.location.href='index_uk.html'">Українська</button>
+        <button onclick="window.location.href='index_en.html'">English</button>
+        <button onclick="window.location.href='index_sw.html'">Svenska</button>
+      </div>
+    </div>
+  </div>
+</body>
